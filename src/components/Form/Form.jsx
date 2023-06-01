@@ -1,7 +1,6 @@
 import Notiflix from 'notiflix';
 import { useState } from 'react';
 import { SearchBtn, SearchForm, Input, Search, Label } from './Form.styled';
-import { ReactComponent as IconSearch } from '../../icons/icon-search.svg';
 
 const Form = ({ onSubmit }) => {
   const [query, setQuery] = useState('');
