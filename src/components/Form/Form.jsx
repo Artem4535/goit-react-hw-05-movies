@@ -1,7 +1,7 @@
 import Notiflix from 'notiflix';
-import { Input } from './Form.styled';
 import { useState } from 'react';
-import { SearchBtn } from './Form.styled';
+import { SearchBtn, SearchForm, Input, Search, Label } from './Form.styled';
+import { ReactComponent as IconSearch } from '../../icons/icon-search.svg';
 
 const Form = ({ onSubmit }) => {
   const [query, setQuery] = useState('');
@@ -20,12 +20,19 @@ const Form = ({ onSubmit }) => {
 
   return (
     <>
-      <form onSubmit={handlerSubmit}>
-        <label>
-          <Input onChange={handlerChange} value={query} type="text"></Input>
-        </label>
-        <SearchBtn type="submit">Search</SearchBtn>
-      </form>
+      <SearchForm onSubmit={handlerSubmit}>
+        <Label>
+          <Input
+            onChange={handlerChange}
+            placeholder="Movie Search"
+            value={query}
+            type="text"
+          ></Input>
+        </Label>
+        <SearchBtn type="submit">
+          <Search width="20" />
+        </SearchBtn>
+      </SearchForm>
     </>
   );
 };

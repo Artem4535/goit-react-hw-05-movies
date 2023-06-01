@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Continer } from 'style/Container.styled';
 import SearchTrending from 'API/API';
-import MoviesList from 'components/Movies/MoviesList';
+import MoviesList from 'components/MoviesList';
 export default function Home() {
   const [data, setData] = useState([]);
   useEffect(() => {

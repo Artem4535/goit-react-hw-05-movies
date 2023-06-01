@@ -8,7 +8,7 @@ function MoviesDetails() {
   const [title, setTitle] = useState();
   const [poster, setPoster] = useState('');
   const location = useLocation();
-  const backLink = useRef(location.state?.from) || '/movies';
+  const backLink = useRef(location.state?.from || '/movies');
 
   useEffect(() => {
     if (movieId) {

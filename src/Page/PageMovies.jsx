@@ -2,7 +2,7 @@ import { useSearchParams } from 'react-router-dom';
 import Form from 'components/Form/Form';
 import { SearchMoviesByQuery } from 'API/API';
 import { useEffect, useState } from 'react';
-import MoviesList from 'components/Movies/MoviesList';
+import MoviesList from 'components/MoviesList';
 
 export default function PageMovies() {
   const [searchParams, setSearchParams] = useSearchParams();

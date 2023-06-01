@@ -1,4 +1,4 @@
-import { SearchMoviesReviews } from '../../API/API';
+import { SearchMoviesReviews } from '../API/API';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
